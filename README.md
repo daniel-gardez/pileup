@@ -7,3 +7,7 @@ next steps might be needed.
 - Implementation of a bandstop filter before creating the dataframe.
 - Fine-tuning the input values for the scipy.find_peaks function - height, prominence and length.
 - Fine-tuning the random coincidences rate for finding the baseline.
+
+We have to keep in mind that for calculating the energy of each photon count, we must fit the peak waveform. Depending on the
+size of the input waveform, perhaps we might need to cut the waveform into smaller chunks, although up to several GB the
+code should work, depending on the available memory.
